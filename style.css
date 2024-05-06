@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+/*body{
+    background: #8a51fc;
+}*/
+body {
+    background: url(./assests/img-fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+
+
+
+
+}
+
+.conteiner {
+    
+    margin: 100px auto;
+    
+}
+
+main {
+    width: 375px;
+    background: transparent;
+    border: 2px solid #4645464f;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+}
+
+label {
+    color: #1e1e1e;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+select,
+input {
+    background: #ffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+
+
+
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    color: purple;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid purple;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+}
+button::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+  }
+
+  button:hover::before {
+    width: 160%;
+  }
+
+section {
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.arrow-img {
+    margin: 10px 0;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    color: #1e1e1e;
+    font-size: 14px;
+
+}
+
+.currency-value .currency-value-to-convert{
+    color: #1e1e1e;
+    font-weight: 700;
+    font-size: 20px;
+
+}
